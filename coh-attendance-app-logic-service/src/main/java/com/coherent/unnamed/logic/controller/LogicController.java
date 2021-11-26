@@ -66,11 +66,6 @@ public class LogicController {
 	 }
 
 
-//	@GetMapping(value="/hoursandpresent")
-//	public BaseResponse hoursandpresent(@RequestParam(value="date") Date date){
-//		return logicService.hoursandpresent(date);
-//	}
-
 	@Scheduled(fixedDelay = 5000)
 	public void calculatehours(){
 		   logicService.calculatehours();
